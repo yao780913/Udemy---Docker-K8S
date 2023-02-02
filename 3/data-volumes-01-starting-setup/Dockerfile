@@ -10,4 +10,9 @@ COPY . .
 
 EXPOSE 80
 
+VOLUME [ "/app/feedback" ] 
+# Anonymous volumes
+
 CMD [ "node", "server.js" ]
+
+# docker run -d -p 3000:80 --rm --name feedback-app $image
