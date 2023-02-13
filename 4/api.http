@@ -1,0 +1,12 @@
+### Get favorites
+GET http://localhost:3000/favorites
+
+### POST favorites
+POST http://localhost:3000/favorites
+Content-Type: application/json
+
+{
+    "name": "A New Hope",
+    "type": "movie",
+    "url": "http://swapi.dev/api/films/1/"
+}
